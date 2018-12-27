@@ -4,7 +4,6 @@ import { formatPrice } from '../helpers';
 class Fish extends React.Component {
   handleClick = () => {
     this.props.addToOrder(this.props.index);
-    console.log(this);
   }
   render() {
     // ES6 destructuring
