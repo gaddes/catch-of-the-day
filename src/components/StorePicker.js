@@ -1,8 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { getFunName } from '../helpers';
 
 class StorePicker extends React.Component {
   myInput = React.createRef();
+
+  static propTypes = {
+    history: PropTypes.object
+  }
+
   /*
     This syntax (arrow function) allows us to access 'this' keyword from within function.
     It's a more concise alternative to creating a constructor() method and binding 'this' within it.
